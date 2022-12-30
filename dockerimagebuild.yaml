@@ -1,11 +1,11 @@
 ---
 - name: docker image build and push to docker hub
-  hosts: 172.31.43.154
+  hosts: all
   gather_facts: no
   become: yes
   tasks:
   - name: Create docker images using war artifactory
-    command: docker build -t project2:latest /var/lib/jenkins/workspace/Certification\ Project\ -\ 2
+    command: docker build -t project2:latest /var/lib/jenkins/workspace/Example-projrct2-practice/
 
 
   - name: create tag to image
