@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('clone git url') {
             steps {
-                git 'https://github.com/sreeramakumar/devops-certification-project2.git'
+                git 'https://github.com/sreeramakumar/Example-projrct2-practice.git'
             }
         }
         stage('docker image build and push to docker hub') {
